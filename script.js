@@ -20,6 +20,7 @@ class Animal2 {
   }
 
   putInTheDocument() {
+    console.log("asdasd")
     var petsTable = document.getElementById("petsTable");
     var petTR = document.createElement("tr");
     petTR.onclick = this.putImageInTheDocument.bind(this);
@@ -63,6 +64,7 @@ class Monkey2 extends Animal2 {
 }
 
 var Mila = new Cat2("Mila", "https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+console.log
 Mila.putInTheDocument();
 
 var Charlie = new Monkey2("Charlie", "https://cdn.mos.cms.futurecdn.net/wxLD2KnTXBcrDWSBdaLixK-1200-80.jpg");
